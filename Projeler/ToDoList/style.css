@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#24282e ;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #525252, #24282e);;
+    background-attachment: fixed;
+    background-size: cover ;
+    /* border: 1px solid transparent; */
+    animation: border 2s infinite;
+    border-radius: 20px;
+    margin-top: 100px;
+
+}
+@keyframes border{
+    0% {
+        border: 5px solid #202429;
+
+    }
+    
+    25% {
+        border: 5px solid #202429;
+       
+
+    }
+    
+    50% {
+        border: 5px solid #202429;
+       
+
+    }
+    
+    100% {
+        border: 5px solid #202429;
+       
+
+    }
+}
+
+.title{
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+.input {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-check-input {
+    width: 800px;    
+    height: auto; 
+    font-size: 16px; 
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+.to-do{
+    margin-top: 10px;
+    margin-left:23%;
+    margin-bottom: 10px;
+    width: 75%;
+    height: auto;
+    padding: 5px 0px;
+    border-radius: 20px;
+    
+}
+.control-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+   
+}
+.control-button i {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .text-to-do{
+    height: 50px;
+    border-radius: 15px;
+   
+  }
+.delete-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+}
+.text-draw{
+    text-decoration: line-through;
+}
+li{
+    list-style: none;
+}
+
+@media (max-width:990px) {
+    .form-check-input{
+        width: 400px;
+    }
+    .text-to-do span{
+       font-size: 20px;
+       
+      }
+      .control-button{
+        width: 30px;
+        height: 30px;
+    }
+   
+}
+@media (max-width:460px) {
+    .form-check-input{
+        width: 200px;
+    }
+    .text-to-do span{
+        font-size: 15px;
+        
+       }
+       .control-button{
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+@media (max-width:220px) {
+    .form-check-input{
+        width: 50px;
+    }
+    .text-to-do span{
+        font-size: 5px;
+        
+       }
+       .control-button{
+        width: 5px;
+        height: 5px;
+    }
+    
+}

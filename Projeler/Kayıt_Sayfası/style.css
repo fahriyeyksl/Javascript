@@ -1,0 +1,37 @@
+.text-h2{
+    font-family: 'Satisfy', cursive;
+    font-weight:600;
+    font-size: 40px;
+    margin: 20px 0px 2px 0px !important;
+}
+
+.container{
+   border: 2px solid rgb(229, 225, 225);
+   max-width: 25%;
+}
+.line{
+    width: 100%;
+    max-width: 5rem;
+    height: 0.10rem;
+    background-color: rgb(212, 212, 212);
+    border-radius: 10px;
+    margin: 10px;
+}
+.p-line{
+    margin-top: 10px;
+}
+.form-width{
+    width: 95%;
+    background: #f9f8f8;
+    padding: 4px;
+    border:2px solid rgb(232, 232, 232) ;
+    border-radius: 5px;
+}
+.buton-kayıt{
+    pointer-events: none;
+    opacity: 0.5;
+}
+.succes{
+    pointer-events:all;
+    opacity: 1;
+}
