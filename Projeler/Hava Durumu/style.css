@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-image: url(arkaplan.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    color: #3f3f3f;
+    font-family: "Lora", serif;
+}
+.container{
+    background-image: url(arkaplan.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+    backdrop-filter: blur(5px);
+}
+.header {
+    text-align: center;
+    margin: 20px 0px;
+}
+h1{
+    margin: 10px 0px;
+    font-size: 40px;
+    padding: 20px 0px;
+}
+.header input{
+    width: 80%;
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #2e2e2e;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.content{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+.city{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+.temp{
+    margin: 20px 0px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.desc{
+    font-size: 30px;
+    margin: 20px 0px;
+    font-weight: bold;
+}
+.minmax{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
