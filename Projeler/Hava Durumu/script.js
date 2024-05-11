@@ -19,15 +19,32 @@ const getResult = (cityName)=>{
  
 
 const displayResult = (result)=>{
-    console.log(result);
     let city = document.querySelector(".city")
     city.innerHTML = `${result.name}`
     let temp=document.querySelector(".temp")
     temp.innerHTML=`${Math.round(result.main.temp)}`
     let desc = document.querySelector(".desc")
     desc.innerHTML = `${result.weather[0].description}`
+    let comment = result.weather[0].description
+    bgchange(comment);
     let minmax=document.querySelector(".minmax")
     minmax.innerHTML=`${Math.round(result.main.temp_min)} °C / ${Math.round(result.main.temp_max)} °C`
+}
+
+const bgchange= (comment)=>{
+    const containerbg=document.querySelector(".container")
+    if(comment.includes("bulutlu")){
+        containerbg.style.backgroundImage = "url(bulutlu.jpg)";
+    }
+    else if(comment.includes("güneşli")){
+        containerbg.style.backgroundImage = "url(güneş.jpg)";
+    }
+    else if (comment.includes("şimşek")){
+         containerbg.style.backgroundImage ="url(şimşek.jpg)";
+    }
+    else if(comment.includes("yağmur") || comment.includes("sağanak")){
+         containerbg.style.backgroundImage = "url(yağmur.jpg)";
+    }
 }
 
 const search = document.getElementById("search");
