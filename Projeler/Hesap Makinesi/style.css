@@ -82,3 +82,26 @@ li{
     border-radius: 100px;
     background-color: #2b2a2a;
 }
+
+@media screen and (max-width:960px) {
+     .result span{
+        font-size: 3rem;
+     }
+     .calculator{
+        padding: 5px;
+        width: 25%;
+     }
+     li{
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+        text-align: center;
+     }
+     .zero{
+        width: 125px;
+        height: 50px;
+     }
+     ul span{
+        font-size: 20px;
+     }
+}
