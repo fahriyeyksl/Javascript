@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background: url(bg.jpeg);
+   backdrop-filter: blur(2px);
+}
+
+.calculator{
+    width: 30%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* padding: 50px 10px; */
+    border-radius: 30px;
+    background: linear-gradient(#444444,#000);
+    position: relative;
+    
+}
+.result {
+    position: absolute;
+    right: 50px;
+
+}
+ .result span{
+    font-size: 4rem;
+    color: #fff;
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20%;
+    /* position: relative; */
+
+}
+
+ul span{
+    color: #fff;
+    font-size: 2rem;
+    
+}
+li{
+    margin: 0  10px;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.active{
+    background: linear-gradient(#767676,#2f2f2f) !important;
+}
+.active2{
+    background: linear-gradient(rgb(148, 135, 111),rgb(117, 95, 54)) !important ;
+}
+.greybutton{
+    background: #434343;
+    
+}
+.orangebutton{
+    background: orange;
+}
+.blackbutton{
+    background: #2b2b2b;
+}
+.zero{
+    width: 150px;
+    height: 70px;
+    border-radius: 100px;
+    background-color: #2b2a2a;
+}
